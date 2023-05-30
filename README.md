@@ -4,8 +4,8 @@ this is a testcase
 
 ## api usage
 
-address http://158.160.5.188
-authentification header API-TOKEN
+address http://158.160.26.157/
+authentification header name API-TOKEN
 
 ## GET params
 
