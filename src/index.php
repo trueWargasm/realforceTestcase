@@ -49,7 +49,7 @@ $jsonData = JsonLoader::loadData($workDirectory);
 
 
 foreach ($jsonData["drivers"] as $row) {
-    if (strpos(
+    if ($request->getQueryParam('search', false) && strpos(
         serialize($row),
         $request->getQueryParam('search', null),
     ) === false) continue; //search string not found, skip
